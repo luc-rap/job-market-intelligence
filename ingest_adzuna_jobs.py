@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from datetime import datetime, timezone
 import pandas as pd
+import boto3
 
 load_dotenv()
 
@@ -21,6 +22,15 @@ SEARCH_PARAMS = {
     "results_per_page": 10,
     "content-type": "application/json"
 }
+
+S3_BUCKET = "job-market-intelligence-raw-lr"
+
+session = boto3.Session(
+    profile_name="job-market",
+    region_name="us-east-1"
+)
+
+s3_client = session.client("s3")
 
 #response = requests.get(url, params=params, timeout=30)
 
@@ -85,6 +95,19 @@ def ingest_jobs(max_pages=3):
         output_file = output_dir / f"run{run_id}_page{page}.json"
         with output_file.open("w") as f:
             json.dump(jobs, f)
+        # when with block is exited, it automatically closes the file, this ensures all data has been written before boto3 starts reading it for upload    
+        s3_key = (
+            f"adzuna/ingestion_date={date}/"
+            f"{output_file.name}"
+        )
+
+        s3_client.upload_file(
+            str(output_file),
+            S3_BUCKET,
+            s3_key
+        )
+
+        print(f"Uploaded to S3: {s3_key}")
         print(f"Saved: {output_file}")
     print(f"Job ingestion completed. Data saved in: {output_dir}")
 
@@ -127,7 +150,7 @@ if __name__ == "__main__":
     if not APP_ID or not APP_KEY:
         raise ValueError("Missing Adzuna API credentials")
 
-    #ingest_jobs(max_pages=3)
+    ingest_jobs(max_pages=3)
     
     all_jobs = []
     # load all json files from data directory, regardless of date
