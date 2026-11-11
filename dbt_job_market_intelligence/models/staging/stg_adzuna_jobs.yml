@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_adzuna_jobs
+    description: "Staging model containing flattened Adzuna job postings."
+
+    columns:
+      - name: ADREF
+        description: "Adzuna reference for the job posting."
+        tests:
+          - not_null
+          - unique
+
+      - name: JOB_TITLE
+        description: "Title of the job posting."
+        tests:
+          - not_null

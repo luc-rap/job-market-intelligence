@@ -3,3 +3,7 @@
 __pycache__/
 .ipynb_checkpoints/
 data/
+dbt_job_market_intelligence/target/
+dbt_job_market_intelligence/dbt_packages/
+dbt_job_market_intelligence/logs/
+dbt_job_market_intelligence/dbt_modules/

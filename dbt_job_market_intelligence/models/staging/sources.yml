@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: adzuna
+    database: JOB_MARKET_INTELLIGENCE
+    schema: RAW
+    tables:
+      - name: raw_adzuna_jobs
