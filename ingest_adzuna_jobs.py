@@ -20,6 +20,9 @@ SEARCH_PARAMS = {
     "what": "Data Engineer",
     "where": "Florida",
     "results_per_page": 10,
+    "max_days_old": 2,
+    "sort_by": "date",
+    "sort_direction": "down",
     "content-type": "application/json"
 }
 
@@ -85,10 +88,14 @@ def ingest_jobs(max_pages=3):
     run_id = timestamp.strftime("%Y%m%d%H%M%S")
     output_dir = Path(__file__).resolve().parent / "data" / date
     output_dir.mkdir(parents=True, exist_ok=True)
+    total_jobs = 0
+    pages_processed = 0
     for page in range(1, max_pages + 1):
         print(f"Fetching page {page}...")
         data = fetch_page(page)
         jobs = data.get("results", [])
+        total_jobs += len(jobs)
+        pages_processed += 1
         if not jobs:
             print("No more jobs found.")
             break
@@ -109,7 +116,7 @@ def ingest_jobs(max_pages=3):
 
         print(f"Uploaded to S3: {s3_key}")
         print(f"Saved: {output_file}")
-    print(f"Job ingestion completed. Data saved in: {output_dir}")
+    print(f"Job ingestion completed. Data saved in: {output_dir} (Total jobs: {total_jobs}, Pages processed: {pages_processed})")
 
 # convert nested job record into a flat record  
 def transform_jobs(job, ingestion_date):
@@ -150,7 +157,7 @@ if __name__ == "__main__":
     if not APP_ID or not APP_KEY:
         raise ValueError("Missing Adzuna API credentials")
 
-    ingest_jobs(max_pages=3)
+    ingest_jobs(max_pages=5)
     
     all_jobs = []
     # load all json files from data directory, regardless of date
