@@ -27,7 +27,7 @@ S3_BUCKET = "job-market-intelligence-raw-lr"
 
 session = boto3.Session(
     profile_name="job-market",
-    region_name="us-east-1"
+    region_name="us-east-2"
 )
 
 s3_client = session.client("s3")

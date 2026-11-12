@@ -1,0 +1,26 @@
+WITH jobs AS (
+    SELECT
+        ADREF,
+        JOB_TITLE,
+        COMPANY_NAME,
+        COUNTRY,
+        STATE,
+        CITY,
+        CATEGORY,
+        POSTED_AT
+    FROM {{ ref('stg_adzuna_jobs') }}
+)
+
+SELECT
+    COUNTRY,
+    STATE,
+    CITY,
+    COUNT(*) AS JOB_POSTINGS,
+    COUNT(DISTINCT COMPANY_NAME) AS DISTINCT_COMPANIES,
+    COUNT(DISTINCT CATEGORY) AS DISTINCT_CATEGORIES,
+    MAX(POSTED_AT) AS MOST_RECENT_POSTING
+FROM jobs
+GROUP BY
+    COUNTRY,
+    STATE,
+    CITY
