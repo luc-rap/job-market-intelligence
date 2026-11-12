@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 import pandas as pd
 import boto3
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 APP_ID = os.getenv("ADZUNA_APP_ID")
 APP_KEY = os.getenv("ADZUNA_APP_KEY")

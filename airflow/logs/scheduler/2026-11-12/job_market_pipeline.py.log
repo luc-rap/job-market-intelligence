@@ -1,0 +1,169 @@
+[2026-11-12T04:23:23.921+0000] {processor.py:186} INFO - Started process (PID=181) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:23:23.922+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:23:23.924+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:23.924+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:23:23.949+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:23:24.104+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.103+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:job_market_pipeline
+[2026-11-12T04:23:24.112+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.111+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:job_market_pipeline
+[2026-11-12T04:23:24.118+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.117+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:job_market_pipeline
+[2026-11-12T04:23:24.127+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.126+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:job_market_pipeline
+[2026-11-12T04:23:24.133+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.133+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:job_market_pipeline
+[2026-11-12T04:23:24.139+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.139+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:job_market_pipeline
+[2026-11-12T04:23:24.145+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.145+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:job_market_pipeline
+[2026-11-12T04:23:24.146+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.146+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:23:24.154+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.154+0000] {dag.py:3262} INFO - Creating ORM DAG for job_market_pipeline
+[2026-11-12T04:23:24.154+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:24.154+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:23:24.169+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.251 seconds
+[2026-11-12T04:23:54.325+0000] {processor.py:186} INFO - Started process (PID=186) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:23:54.326+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:23:54.328+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:54.328+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:23:54.342+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:23:54.363+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:54.363+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:23:54.373+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:23:54.373+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:23:54.389+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.068 seconds
+[2026-11-12T04:24:24.486+0000] {processor.py:186} INFO - Started process (PID=194) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:24:24.487+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:24:24.488+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:24:24.488+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:24:24.502+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:24:24.521+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:24:24.521+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:24:24.531+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:24:24.531+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:24:24.546+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.064 seconds
+[2026-11-12T04:24:54.691+0000] {processor.py:186} INFO - Started process (PID=199) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:24:54.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:24:54.693+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:24:54.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:24:54.706+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:24:54.726+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:24:54.726+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:24:54.737+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:24:54.737+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:24:54.753+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.066 seconds
+[2026-11-12T04:25:24.863+0000] {processor.py:186} INFO - Started process (PID=204) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:25:24.864+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:25:24.866+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:25:24.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:25:24.881+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:25:24.900+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:25:24.899+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:25:24.910+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:25:24.910+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:25:24.925+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.067 seconds
+[2026-11-12T04:25:55.059+0000] {processor.py:186} INFO - Started process (PID=209) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:25:55.060+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:25:55.061+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:25:55.061+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:25:55.075+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:25:55.094+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:25:55.093+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:25:55.103+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:25:55.103+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:25:55.120+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.064 seconds
+[2026-11-12T04:26:21.612+0000] {processor.py:186} INFO - Started process (PID=175) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:26:21.613+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:26:21.614+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:26:21.614+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:26:21.629+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:26:21.651+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:26:21.651+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:26:21.662+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:26:21.662+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:26:21.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.067 seconds
+[2026-11-12T04:26:51.785+0000] {processor.py:186} INFO - Started process (PID=186) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:26:51.786+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:26:51.788+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:26:51.788+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:26:51.805+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:26:51.827+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:26:51.827+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:26:51.836+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:26:51.836+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:26:51.850+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.069 seconds
+[2026-11-12T04:27:21.968+0000] {processor.py:186} INFO - Started process (PID=191) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:27:21.968+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:27:21.973+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:27:21.972+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:27:21.986+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:27:22.004+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:27:22.004+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:27:22.014+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:27:22.014+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:27:22.028+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.065 seconds
+[2026-11-12T04:27:52.154+0000] {processor.py:186} INFO - Started process (PID=196) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:27:52.154+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:27:52.156+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:27:52.156+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:27:52.169+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:27:52.186+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:27:52.186+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:27:52.196+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:27:52.196+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:27:52.211+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.060 seconds
+[2026-11-12T04:28:16.295+0000] {processor.py:186} INFO - Started process (PID=201) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:28:16.296+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:28:16.298+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:28:16.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:28:16.321+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:28:16.471+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:28:16.470+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:28:16.482+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:28:16.482+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:28:16.503+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.211 seconds
+[2026-11-12T04:28:32.417+0000] {processor.py:186} INFO - Started process (PID=206) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:28:32.418+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:28:32.420+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:28:32.420+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:28:32.441+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:28:32.450+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:28:32.450+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:28:32.461+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:28:32.461+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:28:32.508+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.093 seconds
+[2026-11-12T04:29:02.579+0000] {processor.py:186} INFO - Started process (PID=211) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:29:02.580+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:29:02.581+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:29:02.581+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:29:02.596+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:29:02.616+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:29:02.616+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:29:02.627+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:29:02.627+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:29:02.642+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.066 seconds
+[2026-11-12T04:29:32.819+0000] {processor.py:186} INFO - Started process (PID=216) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:29:32.819+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:29:32.821+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:29:32.821+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:29:32.835+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:29:32.853+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:29:32.853+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:29:32.863+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:29:32.863+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:29:32.879+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.063 seconds
+[2026-11-12T04:30:02.997+0000] {processor.py:186} INFO - Started process (PID=221) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:30:02.997+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:30:02.999+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:30:02.999+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:30:03.012+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:30:03.030+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:30:03.030+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:30:03.040+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:30:03.040+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:30:03.055+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.064 seconds
+[2026-11-12T04:30:33.184+0000] {processor.py:186} INFO - Started process (PID=248) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:30:33.185+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:30:33.187+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:30:33.186+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:30:33.203+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:30:33.225+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:30:33.225+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:30:33.236+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:30:33.236+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:30:33.252+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.072 seconds
+[2026-11-12T04:31:03.358+0000] {processor.py:186} INFO - Started process (PID=253) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:31:03.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:31:03.360+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:31:03.360+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:31:03.374+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:31:03.393+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:31:03.393+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:31:03.403+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:31:03.402+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:31:03.417+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.062 seconds
+[2026-11-12T04:31:33.600+0000] {processor.py:186} INFO - Started process (PID=280) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:31:33.601+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:31:33.602+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:31:33.602+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:31:33.616+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:31:33.634+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:31:33.634+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:31:33.644+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:31:33.644+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:31:33.659+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.063 seconds
+[2026-11-12T04:32:03.765+0000] {processor.py:186} INFO - Started process (PID=291) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:32:03.765+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:32:03.766+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:32:03.766+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:32:03.780+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:32:03.798+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:32:03.797+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:32:03.807+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:32:03.807+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:32:03.823+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.062 seconds
+[2026-11-12T04:32:33.956+0000] {processor.py:186} INFO - Started process (PID=300) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:32:33.957+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:32:33.958+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:32:33.958+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:32:33.970+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:32:33.984+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:32:33.984+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:32:33.992+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:32:33.992+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:32:34.008+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.054 seconds
+[2026-11-12T04:33:04.137+0000] {processor.py:186} INFO - Started process (PID=305) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:33:04.138+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:33:04.139+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:33:04.139+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:33:04.165+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:33:04.188+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:33:04.188+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:33:04.201+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:33:04.200+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:33:04.219+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.086 seconds
+[2026-11-12T04:33:34.305+0000] {processor.py:186} INFO - Started process (PID=310) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:33:34.305+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:33:34.306+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:33:34.306+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:33:34.319+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:33:34.335+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:33:34.335+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:33:34.345+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:33:34.345+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:33:34.361+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.059 seconds
+[2026-11-12T04:34:04.530+0000] {processor.py:186} INFO - Started process (PID=315) to work on /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:34:04.530+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/job_market_pipeline.py for tasks to queue
+[2026-11-12T04:34:04.532+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:34:04.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:34:04.543+0000] {processor.py:925} INFO - DAG(s) 'job_market_pipeline' retrieved from /opt/airflow/dags/job_market_pipeline.py
+[2026-11-12T04:34:04.558+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:34:04.558+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-11-12T04:34:04.568+0000] {logging_mixin.py:190} INFO - [2026-11-12T04:34:04.568+0000] {dag.py:4180} INFO - Setting next_dagrun for job_market_pipeline to None, run_after=None
+[2026-11-12T04:34:04.582+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/job_market_pipeline.py took 0.055 seconds
