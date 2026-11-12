@@ -4,8 +4,8 @@ job_market_intelligence:
   outputs:
     dev:
       type: snowflake
-      account: ''
-      user: ''
+      account: 'not needed'
+      user: 'not needed'
       role: ACCOUNTADMIN
       database: JOB_MARKET_INTELLIGENCE
       warehouse: SNOWFLAKE_LEARNING_WH
