@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: int_adzuna_jobs_deduplicated
+    description: "Deduplicated Adzuna job postings, keeping the latest observation for each job ID."
+    columns:
+      - name: JOB_ID
+        description: "Unique Adzuna job identifier."
+        tests:
+          - not_null
+          - unique

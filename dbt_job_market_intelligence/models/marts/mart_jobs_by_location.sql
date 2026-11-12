@@ -8,7 +8,7 @@ WITH jobs AS (
         CITY,
         CATEGORY,
         POSTED_AT
-    FROM {{ ref('stg_adzuna_jobs') }}
+    FROM {{ ref('int_adzuna_jobs_deduplicated') }}
 )
 
 SELECT
