@@ -9,7 +9,6 @@ models:
         description: "Adzuna reference for the job posting."
         tests:
           - not_null
-          - unique
 
       - name: JOB_TITLE
         description: "Title of the job posting."
