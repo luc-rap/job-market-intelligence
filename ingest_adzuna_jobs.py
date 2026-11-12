@@ -86,8 +86,8 @@ def ingest_jobs(max_pages=3):
     timestamp = datetime.now(timezone.utc)
     date = timestamp.strftime("%Y-%m-%d")
     run_id = timestamp.strftime("%Y%m%d%H%M%S")
-    output_dir = Path(__file__).resolve().parent / "data" / date
-    output_dir.mkdir(parents=True, exist_ok=True)
+    #output_dir = Path(__file__).resolve().parent / "data" / date
+    #output_dir.mkdir(parents=True, exist_ok=True)
     total_jobs = 0
     pages_processed = 0
     for page in range(1, max_pages + 1):
@@ -99,24 +99,25 @@ def ingest_jobs(max_pages=3):
         if not jobs:
             print("No more jobs found.")
             break
-        output_file = output_dir / f"run{run_id}_page{page}.json"
-        with output_file.open("w") as f:
-            json.dump(jobs, f)
+        output_file = f"{date}_run{run_id}_page{page}.json"
+        #with output_file.open("w") as f:
+        #    json.dump(jobs, f)
         # when with block is exited, it automatically closes the file, this ensures all data has been written before boto3 starts reading it for upload    
         s3_key = (
             f"adzuna/ingestion_date={date}/"
-            f"{output_file.name}"
+            f"{output_file}"
         )
 
-        s3_client.upload_file(
-            str(output_file),
-            S3_BUCKET,
-            s3_key
+        s3_client.put_object(
+            Bucket=S3_BUCKET,
+            Key=s3_key,
+            Body=json.dumps(jobs),
+            ContentType="application/json"
         )
 
         print(f"Uploaded to S3: {s3_key}")
         print(f"Saved: {output_file}")
-    print(f"Job ingestion completed. Data saved in: {output_dir} (Total jobs: {total_jobs}, Pages processed: {pages_processed})")
+    print(f"Job ingestion completed. (Total jobs: {total_jobs}, Pages processed: {pages_processed})")
 
 # convert nested job record into a flat record  
 def transform_jobs(job, ingestion_date):
@@ -159,17 +160,17 @@ if __name__ == "__main__":
 
     ingest_jobs(max_pages=5)
     
-    all_jobs = []
+    #all_jobs = []
     # load all json files from data directory, regardless of date
-    data_dir = Path(__file__).resolve().parent / "data"
-    for json_file in data_dir.glob("**/*.json"):
-        with json_file.open("r") as f:
-            jobs = json.load(f)
-            ingestion_date = json_file.parent.name  # date folder name
-            for job in jobs:
-                all_jobs.append(transform_jobs(job, ingestion_date))
-    df = pd.DataFrame(all_jobs)
-    print(df.head())
-    df.to_csv(data_dir / "all_jobs.csv", index=False)
-    print("Saved transformed job data to all_jobs.csv")
+    #data_dir = Path(__file__).resolve().parent / "data"
+    #for json_file in data_dir.glob("**/*.json"):
+    #    with json_file.open("r") as f:
+    #        jobs = json.load(f)
+    #        ingestion_date = json_file.parent.name  # date folder name
+    #        for job in jobs:
+    #            all_jobs.append(transform_jobs(job, ingestion_date))
+    #df = pd.DataFrame(all_jobs)
+    #print(df.head())
+    #df.to_csv(data_dir / "all_jobs.csv", index=False)
+    #print("Saved transformed job data to all_jobs.csv")
    
