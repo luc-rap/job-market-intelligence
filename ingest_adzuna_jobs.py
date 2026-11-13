@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 import json
 from pathlib import Path
 from datetime import datetime, timezone
-import pandas as pd
 import boto3
 
 load_dotenv(Path(__file__).resolve().parent / ".env")
@@ -34,15 +33,6 @@ session = boto3.Session(
 )
 
 s3_client = session.client("s3")
-
-#response = requests.get(url, params=params, timeout=30)
-
-#response.raise_for_status()
-
-#data = response.json()
-
-#print("Total matching jobs:", data.get("count"))
-#print("Jobs retrieved:", len(data.get("results", [])))
 
 def results_analysis(data):
     # return 10 jobs and save them to a file for inspection and data fields check
@@ -86,8 +76,6 @@ def ingest_jobs(max_pages=3):
     timestamp = datetime.now(timezone.utc)
     date = timestamp.strftime("%Y-%m-%d")
     run_id = timestamp.strftime("%Y%m%d%H%M%S")
-    #output_dir = Path(__file__).resolve().parent / "data" / date
-    #output_dir.mkdir(parents=True, exist_ok=True)
     total_jobs = 0
     pages_processed = 0
     for page in range(1, max_pages + 1):
@@ -99,10 +87,7 @@ def ingest_jobs(max_pages=3):
         if not jobs:
             print("No more jobs found.")
             break
-        output_file = f"{date}_run{run_id}_page{page}.json"
-        #with output_file.open("w") as f:
-        #    json.dump(jobs, f)
-        # when with block is exited, it automatically closes the file, this ensures all data has been written before boto3 starts reading it for upload    
+        output_file = f"{date}_run{run_id}_page{page}.json"  
         s3_key = (
             f"adzuna/ingestion_date={date}/"
             f"{output_file}"
@@ -159,18 +144,4 @@ if __name__ == "__main__":
         raise ValueError("Missing Adzuna API credentials")
 
     ingest_jobs(max_pages=5)
-    
-    #all_jobs = []
-    # load all json files from data directory, regardless of date
-    #data_dir = Path(__file__).resolve().parent / "data"
-    #for json_file in data_dir.glob("**/*.json"):
-    #    with json_file.open("r") as f:
-    #        jobs = json.load(f)
-    #        ingestion_date = json_file.parent.name  # date folder name
-    #        for job in jobs:
-    #            all_jobs.append(transform_jobs(job, ingestion_date))
-    #df = pd.DataFrame(all_jobs)
-    #print(df.head())
-    #df.to_csv(data_dir / "all_jobs.csv", index=False)
-    #print("Saved transformed job data to all_jobs.csv")
    

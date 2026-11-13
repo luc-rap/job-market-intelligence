@@ -61,6 +61,8 @@ The project currently uses Adzuna's free API access, open-source Apache Airflow 
 
 - **Local orchestration:** Airflow runs in Docker on a local computer, so scheduled runs happen only while that computer is on and Docker is running.
 - **S3-to-Snowflake credentials:** The intended secure AWS IAM role-based integration has not been configured successfully. The current external stage uses direct AWS credentials as a workaround; this is less secure and should be replaced with a Snowflake storage integration and an AWS IAM role.
+- **Company name normalization:** Company names are not yet standardized, so casing and naming variations (for example, `Deloitte` and `DELOITTE`) may be counted as separate companies.
+- **dbt environments:** The dbt profile currently has only a `dev` target. That is sufficient for this portfolio project, but there are no separate staging or production targets.
 - **Alternative ingestion:** Snowpipe with S3 event notifications could automatically ingest new files instead of relying on the scheduled Airflow `COPY INTO` task. It is not currently implemented and would still require working secure AWS/Snowflake integration.
 - **Tableau publishing:** The dashboard is currently viewed in Tableau Desktop's free-trial setup. Publishing/sharing has not been verified and may require an eligible Tableau license; the image below is a local dashboard preview.
 - **One-time setup:** Airflow connections, AWS access, the Snowflake stage/stream/task graph, and the Tableau connection must be configured before the automated flow can run.
