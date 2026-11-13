@@ -16,7 +16,7 @@ def run_adzuna_ingestion():
     if not APP_ID or not APP_KEY:
         raise ValueError("Missing Adzuna API credentials")
 
-    ingest_jobs(max_pages=5)
+    ingest_jobs(max_pages=10)
 
 
 with DAG(

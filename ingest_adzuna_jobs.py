@@ -19,7 +19,7 @@ SEARCH_PARAMS = {
     "app_key": APP_KEY,
     "what": "Data Engineer",
     "where": "Florida",
-    "results_per_page": 10,
+    "results_per_page": 50,
     "max_days_old": 2,
     "sort_by": "date",
     "sort_direction": "down",
