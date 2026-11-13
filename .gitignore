@@ -7,3 +7,4 @@ dbt_job_market_intelligence/target/
 dbt_job_market_intelligence/dbt_packages/
 dbt_job_market_intelligence/logs/
 dbt_job_market_intelligence/dbt_modules/
+airflow/logs/

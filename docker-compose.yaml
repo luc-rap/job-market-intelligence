@@ -5,8 +5,8 @@ x-airflow-common: &airflow-common
   image: job-market-intelligence-airflow:2.10.5
   environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
-    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-    AIRFLOW__CORE__FERNET_KEY: ""
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres/${POSTGRES_DB}
+    AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth
   volumes:
@@ -16,6 +16,7 @@ x-airflow-common: &airflow-common
     - ${USERPROFILE}/.aws:/home/airflow/.aws:ro
     - ./ingest_adzuna_jobs.py:/opt/project/ingest_adzuna_jobs.py:ro
     - ./.env:/opt/project/.env:ro
+    - ${USERPROFILE}/.snowflake/keys:/opt/airflow/secrets/snowflake:ro
   depends_on:
     postgres:
       condition: service_healthy
@@ -24,9 +25,9 @@ services:
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_USER: airflow
-      POSTGRES_PASSWORD: airflow
-      POSTGRES_DB: airflow
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
     healthcheck:
@@ -44,7 +45,7 @@ services:
         airflow db migrate
         airflow users create \
           --username airflow \
-          --password airflow \
+          --password "${AIRFLOW_ADMIN_PASSWORD}" \
           --firstname Airflow \
           --lastname Admin \
           --role Admin \
