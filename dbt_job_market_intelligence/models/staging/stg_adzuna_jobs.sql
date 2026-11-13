@@ -37,6 +37,7 @@ SELECT -- extracts individual json attributes and converts them into regular SQL
     JOB:salary_max::NUMBER(12,2) AS SALARY_MAX,
     JOB:redirect_url::VARCHAR AS REDIRECT_URL,
     JOB:description::VARCHAR AS DESCRIPTION,
+    JOB:salary_is_predicted::BOOLEAN AS SALARY_IS_PREDICTED,
     TRY_TO_TIMESTAMP_NTZ(JOB:created::VARCHAR) AS POSTED_AT,
     SOURCE_FILE,
     LOADED_AT,

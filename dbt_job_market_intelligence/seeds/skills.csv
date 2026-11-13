@@ -1,0 +1,26 @@
+skill,category,pattern
+Python,Language,python
+SQL,Language,sql
+Java,Language,java
+Scala,Language,scala
+Snowflake,Data platform,snowflake
+Databricks,Data platform,databricks
+BigQuery,Data platform,bigquery
+Redshift,Data platform,redshift
+dbt,Data engineering,dbt
+Airflow,Orchestration,airflow
+Spark,Data engineering,spark|pyspark
+Kafka,Data engineering,kafka
+Docker,DevOps,docker
+Kubernetes,DevOps,kubernetes|k8s
+Terraform,DevOps,terraform
+AWS,Cloud,aws|amazon web services
+Azure,Cloud,azure
+GCP,Cloud,gcp|google cloud
+Tableau,BI,tableau
+Power BI,BI,power ?bi
+Excel,BI,excel
+PostgreSQL,Database,postgres|postgresql
+MySQL,Database,mysql
+MongoDB,Database,mongodb
+Git,Tools,git|github
