@@ -2,6 +2,19 @@
 
 An automated data pipeline that collects Adzuna job postings, stores the raw data in Amazon S3, loads it into Snowflake, transforms it with dbt, and presents the results in Tableau.
 
+## ✿ Technology stack
+
+| Layer | Technology |
+| --- | --- |
+| Job data source | Adzuna Jobs API |
+| Ingestion | Python, `requests`, `boto3` |
+| Orchestration and local runtime | Apache Airflow, Docker Compose |
+| Raw object storage | Amazon S3 |
+| Data warehouse | Snowflake |
+| Transformation | dbt, SQL |
+| Visualization | Tableau Desktop |
+| Version control | Git, GitHub |
+
 ## ✿ Architecture
 
 ```text
