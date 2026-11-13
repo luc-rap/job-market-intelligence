@@ -5,8 +5,8 @@ WITH ranked_jobs AS (
             PARTITION BY JOB_ID
             ORDER BY LOADED_AT DESC
         ) AS RN
-    FROM STG_ADZUNA_JOBS
+    FROM {{ ref('stg_adzuna_jobs') }}
 )
-SELECT *
+SELECT * EXCLUDE (RN)
 FROM ranked_jobs
 WHERE RN = 1
